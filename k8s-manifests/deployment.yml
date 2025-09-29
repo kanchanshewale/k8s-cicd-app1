@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-cicd-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: k8s-cicd-app
+  template:
+    metadata:
+      labels:
+        app: k8s-cicd-app
+    spec:
+      containers:
+        - name: k8s-cicd-app
+          image: kanchanshewale2003/k8s-cicd-app:latest
+          ports:
+            - containerPort: 3000

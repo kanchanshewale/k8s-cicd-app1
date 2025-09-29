@@ -1,0 +1,12 @@
+{
+  "name": "k8s-cicd-app",
+  "version": "1.0.0",
+  "description": "Demo Node.js app for CI/CD with Kubernetes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

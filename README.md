@@ -57,15 +57,14 @@ Once created, configure kubectl:
  - Cluster authentication issues
  → Run aws eks update-kubeconfig with correct AWS profile.
 
-## step 5:
-## Verification
+## step 5: Verification
 Check cluster status:
 
  - kubectl get nodes
  - kubectl get pod
  - kubectl get svc
-## step 6:
-Application Access
+
+## step 6: Application Access
 After a successful deployment, the application is exposed via an AWS Load Balancer (ELB) created by the Kubernetes Service.
 1. Retrieve the service details:
 - kubectl get svc k8s-cicd-app-service
